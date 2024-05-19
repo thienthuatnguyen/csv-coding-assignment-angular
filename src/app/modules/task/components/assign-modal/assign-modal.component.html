@@ -1,0 +1,22 @@
+<h2 mat-dialog-title>Assign task to</h2>
+<mat-dialog-content class="mat-typography">
+  
+  <mat-form-field appearance="fill">
+    <mat-label>Select person</mat-label>
+    <mat-select [(ngModel)]="this.userId">
+      <mat-option *ngFor="let user of this.listUser" [value]="user.id" >{{user.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+ 
+  
+</mat-dialog-content>
+<br/>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click) = "assignUser()">Apply</button>
+</mat-dialog-actions>
+
+
+<!-- Copyright 2024 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->

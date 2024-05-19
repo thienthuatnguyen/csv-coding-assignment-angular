@@ -1,0 +1,15 @@
+
+
+app-table-ui .row-table{
+    display: flex;
+}
+
+app-table-ui  .row-table .col-table {
+    padding: 15px;
+}
+
+app-table-ui  .row-table .col-table:first-child{
+    font-weight: bold;
+}
+
+
